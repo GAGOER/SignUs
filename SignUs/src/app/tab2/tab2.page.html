@@ -1,0 +1,67 @@
+<ion-content>
+
+  <ion-toolbar>
+    <ion-title color="primary" size="small">Signaler</ion-title>
+  </ion-toolbar>
+
+  <ion-card>
+    <form action="/action_page.php">
+      <label for="img">Select image:</label>
+      <input type="file" id="img" name="img" accept="image/*">
+      <input type="submit">
+    </form>
+    <ion-item>
+      <ion-label color="tertialy">LOCALISATION</ion-label>
+      <ion-input color="warning" placeholder="google map" type="name"></ion-input>
+    </ion-item>
+  </ion-card>
+
+
+  <ion-card>
+    <ion-list>
+      <ion-radio-group value="biff">
+        <ion-list-header>
+          <ion-label color="tertialy">Statut :</ion-label>
+        </ion-list-header>
+
+        <ion-item lines="none">
+          <ion-label color="tertialy">Vandalisme</ion-label>
+          <ion-radio color="warning" slot="start" value="alpha"></ion-radio>
+        </ion-item>
+
+        <ion-item lines="none">
+          <ion-label color="tertialy">Nid de poule</ion-label>
+          <ion-radio color="warning" slot="start" value="bravo"></ion-radio>
+        </ion-item>
+
+        <ion-item lines="none">
+          <ion-label color="tertialy">Route barrée</ion-label>
+          <ion-radio color="warning" slot="start" value="charlie"></ion-radio>
+        </ion-item>
+
+        <ion-item lines="none">
+          <ion-label color="tertialy">Depot sauvage d'ordure</ion-label>
+          <ion-radio color="warning" slot="start" value="delta"></ion-radio>
+        </ion-item>
+
+        <ion-item lines="none">
+          <ion-label color="tertialy">Autres</ion-label>
+          <ion-radio position="floating" slot="start" value="echo"></ion-radio>
+          <ion-textarea placeholder="Autres" rows="1" cols="1"></ion-textarea>
+        </ion-item>
+
+        <ion-item lines="none">
+          <ion-label color="tertialy">Commentaires</ion-label>
+          <ion-textarea placeholder="Commentaires" rows="1" cols="1"></ion-textarea>
+        </ion-item>
+        
+
+      </ion-radio-group>
+    </ion-list>
+
+    <br>
+    <ion-button shape="round" expand="block" color="warning" [routerLink]="['/recapitulatif-du-signallement']">Valider</ion-button>
+  </ion-card>
+
+
+</ion-content>

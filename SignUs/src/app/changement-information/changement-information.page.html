@@ -1,0 +1,44 @@
+<ion-content>
+
+  <ion-toolbar>
+    <ion-title color="primary" size="small">Changement d'information</ion-title>
+  </ion-toolbar>
+
+  <form>
+
+    <div>
+
+      <ion-card class="padding">
+
+        <!--"ion-item" c est pour proposer du contenue en ligne -->
+        <ion-item>
+          <ion-label position="floating">NOM :</ion-label>
+          <ion-input placeholder="BALDASERONI" type="name"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Prenom :</ion-label>
+          <ion-input placeholder="Sebastien" type="name"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Adresse :</ion-label>
+          <ion-input placeholder="08 Truc Machin Chouette" type="name"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Email :</ion-label>
+          <ion-input placeholder="truc@gmail.com" type="email"></ion-input>
+        </ion-item>
+
+        <ion-button expand="block" color="primary" [routerLink]="['/tabs/tab3']">Valider</ion-button>
+        <br>
+        <ion-button color="primary" fill="outline" expand="block" type="submit" [routerLink]="['/tabs/tab3']">Retour</ion-button>
+
+      </ion-card>
+
+    </div>
+
+  </form>
+
+</ion-content>

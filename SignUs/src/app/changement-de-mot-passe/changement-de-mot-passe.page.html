@@ -1,0 +1,35 @@
+<ion-content>
+  
+  <ion-toolbar>
+    <ion-title color="primary" size="small">Changement de mot de passe</ion-title>
+  </ion-toolbar>
+
+  <form>
+
+    <ion-card>
+      
+      <ion-item>
+        <ion-label position="floating">Mot de passe actuelle:</ion-label>
+        <ion-input type="password"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Nouveau mot de passe :</ion-label>
+        <ion-input type="password"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Confirmer votre mot de passe :</ion-label>
+        <ion-input type="password"></ion-input>
+      </ion-item>
+
+      <ion-button expand="block" color="primary" [routerLink]="['/tabs/tab3']">Modifier</ion-button>
+      <br>
+      <ion-button color="primary" fill="outline" expand="block" type="submit" [routerLink]="['/tabs/tab3']">Retour</ion-button>
+
+    </ion-card>
+
+  </form>
+
+
+</ion-content>

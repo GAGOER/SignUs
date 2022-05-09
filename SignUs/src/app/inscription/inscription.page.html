@@ -1,0 +1,94 @@
+<ion-content>
+
+  <ion-toolbar>
+    <ion-title color="primary" size="small">Inscription</ion-title>
+  </ion-toolbar>
+
+  <form>
+
+    <div>
+
+      <ion-card class="padding">
+
+        <ion-item>
+          <ion-label position="floating">NOM :</ion-label>
+          <ion-input placeholder="BALDASERONI" type="name"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Prenom :</ion-label>
+          <ion-input placeholder="Sebastien" type="name"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Age :</ion-label>
+          <ion-input placeholder="Sebastien" type="name"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Ville :</ion-label>
+          <ion-input placeholder="Matoury" type="name"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Code postale :</ion-label>
+          <ion-input placeholder="97351" type="name"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Adresse :</ion-label>
+          <ion-input placeholder="08 Truc Machin Chouette" type="name"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Email :</ion-label>
+          <ion-input placeholder="truc@gmail.com" type="email"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Mot de passe :</ion-label>
+          <ion-input type="password"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Confirmer votre mot de passe :</ion-label>
+          <ion-input type="password"></ion-input>
+        </ion-item>
+
+
+        <ion-list>
+          <ion-radio-group value="biff">
+            <ion-list-header>
+              <ion-label>Votre statut :</ion-label>
+            </ion-list-header>
+
+            <ion-item lines="none">
+              <ion-label>Citoyen</ion-label>
+              <ion-radio color="warning" slot="start" value="alpha"></ion-radio>
+            </ion-item>
+
+            <ion-item lines="none">
+              <ion-label>Association</ion-label>
+              <ion-radio color="warning" slot="start" value="bravo"></ion-radio>
+            </ion-item>
+
+            <ion-item lines="none">
+              <ion-label>Entreprise</ion-label>
+              <ion-radio color="warning" slot="start" value="chatlie"></ion-radio>
+            </ion-item>
+
+          </ion-radio-group>
+        </ion-list>
+
+
+        <ion-button expand="block" color="primary" [routerLink]="['/tabs/tab2']">Valider</ion-button>
+        <br>
+        <ion-button color="primary" fill="outline" expand="block" type="submit" [routerLink]="['/connexion']">Retour</ion-button>
+
+      </ion-card>
+
+    </div>
+
+  </form>
+
+</ion-content>

@@ -1,0 +1,7 @@
+{
+  "name": "SignUs",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

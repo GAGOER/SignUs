@@ -1,0 +1,28 @@
+<ion-content>
+
+  <ion-toolbar>
+    <ion-title color="primary" size="small">Profil</ion-title>
+  </ion-toolbar>
+
+  <form>
+
+    <div>
+      
+      <ion-card class="padding">
+
+        <p>NOM Prenom</p>
+        <p>Email</p>
+        <p>Adresse </p>
+
+        <ion-button expand="block" color="primary" size="small" fill="outline" id="taille" [routerLink]="['/changement-information']"  >Changer les informations</ion-button>
+        <ion-button expand="block" color="primary" size="small" fill="outline" id="taille" [routerLink]="['/changement-de-mot-passe']"  >Changer le mot de passe</ion-button>
+        <br>
+        <ion-button color="primary" fill="outline" expand="block" type="submit" [routerLink]="['/connexion']"> Deconnexion</ion-button>
+
+      </ion-card>
+
+    </div>
+
+  </form>
+
+</ion-content>

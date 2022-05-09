@@ -1,0 +1,53 @@
+<ion-content>
+
+  <ion-card>
+    <ion-card-header>
+      <p id="name">SignUs</p>
+      <p id="description">Avec <span> SignUs </span> déclarez les dégâts que vous rencontrez sur la voie publique.</p>
+    </ion-card-header>
+  </ion-card>
+
+  <form>
+
+    <div>
+
+      <ion-card class="padding">
+
+        <!--"ion-item" c est pour proposer du contenue en lignen -->
+        <ion-item>
+          <ion-label position="floating">Email</ion-label>
+          <ion-input  placeholder="truc@gmail.com" type="email"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Mot de passe</ion-label>
+          <ion-input type="password"></ion-input>
+        </ion-item>
+
+        <!-- "lines="none" c'est pour ne pas avoir la ligne juste au dessous" -->
+        <ion-item lines="none">
+          <!-- "fill="clear"" pour que ce soit que le texte qui soit mis en valeur 
+          et non pas le boutton tout entier -->
+          <ion-button color="tertiary" fill="clear" slot="end" [routerLink]="['/mot-de-passe-oublier']">Mot de passe oublié ?</ion-button>
+        </ion-item>
+
+        <!-- "fill="outline"" c est le bord et le text du boutton qui sera mis en valeur -->
+        <!-- "shape="round"" pour avoir les bords en arrondi -->
+        <!-- "expand="block"" Pour que les bouttons prennent toutes la largeur -->
+        <ion-button color="primary" fill="outline" expand="block" type="submit" [routerLink]="['/tabs/tab2']">CONNEXION</ion-button>
+        <br>
+        <ion-item lines="none">
+          <!-- "class="ion-text-center"" c'est une class speciale de la propriete ionic 
+          qui permet de centrer -->
+          <ion-label class="ion-text-center">Pas de compte SignUs?</ion-label>
+        </ion-item>
+        <!--<ion-button shape="round" expand="block" [routerLink]="['/inscription']">INSCRIPTION</ion-button>-->
+        <ion-button expand="block" color="primary" [routerLink]="['/inscription']">INSCRIPTION</ion-button>
+
+      </ion-card>
+
+    </div>
+
+  </form>
+
+</ion-content>
