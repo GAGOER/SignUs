@@ -1,19 +1,27 @@
 <ion-content>
 
   <ion-toolbar>
-    <ion-title color="primary" size="small">Signaler</ion-title>
+    <ion-title color="primary" size="small">Signalez</ion-title>
   </ion-toolbar>
 
   <ion-card>
+    <ion-item>
+      <ion-grid>
+        <ion-row>
+          <img height="250px" src="../assets/carte-guyane.jpg">
+        </ion-row>
+        <br>
+        <ion-row>
+          <ion-label color="tertialy">Adrsess</ion-label>
+        </ion-row>
+      </ion-grid>
+    </ion-item>
+
     <form action="/action_page.php">
       <label for="img">Select image:</label>
       <input type="file" id="img" name="img" accept="image/*">
       <input type="submit">
     </form>
-    <ion-item>
-      <ion-label color="tertialy">LOCALISATION</ion-label>
-      <ion-input color="warning" placeholder="google map" type="name"></ion-input>
-    </ion-item>
   </ion-card>
 
 
@@ -40,28 +48,27 @@
         </ion-item>
 
         <ion-item lines="none">
-          <ion-label color="tertialy">Depot sauvage d'ordure</ion-label>
+          <ion-label color="tertialy">Dépôt sauvage d'ordures</ion-label>
           <ion-radio color="warning" slot="start" value="delta"></ion-radio>
         </ion-item>
 
         <ion-item lines="none">
-          <ion-label color="tertialy">Autres</ion-label>
+          <ion-label color="tertialy">Autres :</ion-label>
           <ion-radio position="floating" slot="start" value="echo"></ion-radio>
-          <ion-textarea placeholder="Autres" rows="1" cols="1"></ion-textarea>
+          <ion-textarea placeholder="Indiquez" rows="1" cols="1"></ion-textarea>
         </ion-item>
 
-        <ion-item lines="none">
-          <ion-label color="tertialy">Commentaires</ion-label>
-          <ion-textarea placeholder="Commentaires" rows="1" cols="1"></ion-textarea>
+        <ion-item>
+          <ion-label position="floating">Commentaires :</ion-label>
+          <ion-textarea rows="4" cols="20" placeholder="Détaillez"></ion-textarea>
         </ion-item>
-        
+
 
       </ion-radio-group>
     </ion-list>
 
     <br>
-    <ion-button shape="round" expand="block" color="warning" [routerLink]="['/recapitulatif-du-signallement']">Valider</ion-button>
+    <ion-button shape="round" expand="block" [routerLink]="['/recapitulatif-du-signallement']">Valider</ion-button>
   </ion-card>
-
 
 </ion-content>

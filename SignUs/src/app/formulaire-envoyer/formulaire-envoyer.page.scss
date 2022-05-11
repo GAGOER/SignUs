@@ -1,0 +1,40 @@
+ion-title{
+    display: block;
+    text-align: center;
+}
+
+ion-card{
+    padding: 5%;
+}
+
+p{
+    font-size: 21px;
+    margin: 0px;
+    padding: 0px;
+    display: block;
+    text-align: center;
+}
+
+/* Pour avoir un contenue a peu prés centrer */
+.padding {
+    padding: 5px;
+    margin: 0px;
+}
+
+
+/* Ici c est pour le logo */
+.logo {
+    height:75px;
+    position: relative;
+}
+
+/* Ici c est pour le text a l interieur du logo */
+.logo ion-icon {
+    position: absolute;
+    /* C'est ujn font-size car l icon est un text */
+    font-size: 6em;
+    /* Pour bien centrer notre icon a l'interieur de notre boite */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

@@ -1,0 +1,23 @@
+ion-title{
+    display: block;
+    text-align: center;
+}
+
+ion-card, ion-list, ion-button{
+    --ion-background-color: #ffffff;
+}
+
+form{
+    padding: 10px;
+}
+
+/* Pour avoir un contenue a peu prés centrer */
+.padding {
+
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+

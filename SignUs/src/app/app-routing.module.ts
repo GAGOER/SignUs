@@ -33,6 +33,10 @@ const routes: Routes = [
   {
     path: 'mot-de-passe-oublier',
     loadChildren: () => import('./mot-de-passe-oublier/mot-de-passe-oublier.module').then( m => m.MotDePasseOublierPageModule)
+  },
+  {
+    path: 'formulaire-envoyer',
+    loadChildren: () => import('./formulaire-envoyer/formulaire-envoyer.module').then( m => m.FormulaireEnvoyerPageModule)
   }
 ];
 @NgModule({

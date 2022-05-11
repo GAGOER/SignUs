@@ -1,9 +1,41 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>mot-de-passe-oublier</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
+
+  <ion-toolbar>
+    <ion-title color="primary" size="small">Mot de passe oublier</ion-title>
+  </ion-toolbar>
+
+  <form>
+
+    <div>
+
+      <ion-card class="padding">
+
+        <!--"ion-item" c est pour proposer du contenue en lignen -->
+        <ion-item>
+          <ion-text color="tertiary">Veuillez s'il vous plait entrer votre adresse mail</ion-text>
+          <ion-label position="floating">Email</ion-label>
+          <ion-input  placeholder="truc@gmail.com" type="email"></ion-input>
+        </ion-item>
+
+
+        <br>
+        <br>
+
+        <!--<ion-button shape="round" expand="block" [routerLink]="['/inscription']">INSCRIPTION</ion-button>-->
+        <ion-button expand="block" color="primary" [routerLink]="['/connexion']">Envoyer</ion-button>
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <!--<ion-button shape="round" expand="block" [routerLink]="['/inscription']">INSCRIPTION</ion-button>-->
+        <ion-button expand="block" color="primary" fill="outline" [routerLink]="['/connexion']">RETOUR</ion-button>
+
+      </ion-card>
+
+    </div>
+
+  </form>
 
 </ion-content>
