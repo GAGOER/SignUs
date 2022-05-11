@@ -16,14 +16,14 @@
           <ion-input placeholder="BALDASERONI" type="name"></ion-input>
         </ion-item>
 
-        <ion-item>l
+        <ion-item>
           <ion-label position="floating">Prénom :</ion-label>
           <ion-input placeholder="Sebastien" type="name"></ion-input>
         </ion-item>
 
         <ion-item>
-          <ion-label position="floating">Adresse :</ion-label>
-          <ion-input placeholder="08 Truc Machin Chouette" type="name"></ion-input>
+          <ion-label position="floating">Date d'anniversaire :</ion-label>
+          <ion-input placeholder="Sebastien" type="name"></ion-input>
         </ion-item>
 
         <ion-item>
@@ -31,13 +31,47 @@
           <ion-input placeholder="truc@gmail.com" type="email"></ion-input>
         </ion-item>
 
+        <ion-item>
+          <ion-label position="stacked">Adresse :</ion-label>
+          <ion-input placeholder="Ville"></ion-input>
+          <ion-input placeholder="Numéro de la voie"></ion-input>
+          <ion-input placeholder="Rue"></ion-input>
+          <ion-input placeholder="Code postale"></ion-input>
+        </ion-item>
+
+        <ion-list>
+          <ion-radio-group value="biff">
+            <ion-list-header>
+              <ion-label>Votre statut :</ion-label>
+            </ion-list-header>
+
+            <ion-item lines="none">
+              <ion-label>Citoyen</ion-label>
+              <ion-radio color="warning" slot="start" value="alpha"></ion-radio>
+            </ion-item>
+
+            <ion-item lines="none">
+              <ion-label>Association</ion-label>
+              <ion-radio color="warning" slot="start" value="bravo"></ion-radio>
+            </ion-item>
+
+            <ion-item lines="none">
+              <ion-label>Entreprise</ion-label>
+              <ion-radio color="warning" slot="start" value="chatlie"></ion-radio>
+            </ion-item>
+
+          </ion-radio-group>
+        </ion-list>
+
         <ion-button expand="block" color="primary" [routerLink]="['/tabs/tab3']">Valider</ion-button>
         <br>
-        <ion-button color="primary" fill="outline" expand="block" type="submit" [routerLink]="['/tabs/tab3']">Retour</ion-button>
+        <ion-button color="primary" fill="outline" expand="block" type="submit" [routerLink]="['/tabs/tab3']">Retour
+        </ion-button>
 
       </ion-card>
 
     </div>
+
 
   </form>
 

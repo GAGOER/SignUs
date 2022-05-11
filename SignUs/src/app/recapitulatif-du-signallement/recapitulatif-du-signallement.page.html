@@ -7,10 +7,24 @@
   <!-- "ion-item" c est pour proposer du contenue en lignen -->
   <ion-card>
 
-    <p> - Localisation</p>
+    <ion-item>
+      <ion-grid>
+        <ion-row>
+          <img height="250px" src="../assets/carte-guyane.jpg">
+        </ion-row>
+        <br>
+        <ion-row>
+          <ion-label color="tertialy">Localisation</ion-label>
+        </ion-row>
+      </ion-grid>
+    </ion-item>
+
+    <div class="padding">
     <p> - Media</p>
     <p> - type d'incident</p>
     <p> - Détails précisés par l'utilisateur</p>
+
+    </div>
 
     <ion-button shape="round" expand="block" [routerLink]="['/formulaire-envoyer']">Valider</ion-button>
     <ion-button fill="outline" shape="round" expand="block" [routerLink]="['/tabs/tab2']">Retour</ion-button>
