@@ -9,5 +9,6 @@ import { Router } from '@angular/router';
 export class Tab2Page {
 
   constructor(private router: Router) {}
+  
 
 }
