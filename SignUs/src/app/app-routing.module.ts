@@ -7,6 +7,10 @@ const routes: Routes = [
     loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
   },
   {
+    path: '',
+    loadChildren: () => import('./admin/admin.module').then( m => m.AdminPageModule)
+  },
+  {
     path: 'connexion',
     loadChildren: () => import('./connexion/connexion.module').then( m => m.ConnexionPageModule)
   },
@@ -37,6 +41,30 @@ const routes: Routes = [
   {
     path: 'formulaire-envoyer',
     loadChildren: () => import('./formulaire-envoyer/formulaire-envoyer.module').then( m => m.FormulaireEnvoyerPageModule)
+  },
+  {
+    path: 'afaire',
+    loadChildren: () => import('./afaire/afaire.module').then( m => m.AfairePageModule)
+  },
+  {
+    path: 'encours',
+    loadChildren: () => import('./encours/encours.module').then( m => m.EncoursPageModule)
+  },
+  {
+    path: 'nontraiter',
+    loadChildren: () => import('./nontraiter/nontraiter.module').then( m => m.NontraiterPageModule)
+  },
+  {
+    path: 'interdit',
+    loadChildren: () => import('./interdit/interdit.module').then( m => m.InterditPageModule)
+  },
+  {
+    path: 'terminer',
+    loadChildren: () => import('./terminer/terminer.module').then( m => m.TerminerPageModule)
+  },
+  {
+    path: 'admin',
+    loadChildren: () => import('./admin/admin.module').then( m => m.AdminPageModule)
   }
 ];
 @NgModule({
