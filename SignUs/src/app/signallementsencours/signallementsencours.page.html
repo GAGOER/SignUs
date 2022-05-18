@@ -1,0 +1,46 @@
+<ion-content>
+
+  <ion-toolbar>
+    <ion-title id="titre" color="primary" size="small">En cours</ion-title>
+  </ion-toolbar>
+
+  <ion-card>
+
+    <ion-item>
+      <ion-grid>
+        <ion-row>
+          <img height="250px" src="../assets/carte-guyane.jpg">
+        </ion-row>
+        <br>
+        <ion-row>
+          <ion-label color="tertialy">Localisation</ion-label>
+        </ion-row>
+      </ion-grid>
+    </ion-item>
+
+    <div class="padding">
+      <p> - Type de signallement</p>
+      <p> - Media</p>
+      <p> - Détails précisés par l'utilisateur</p>
+      <p> - date</p>
+      <br>
+      <ion-item lines="none">
+        <ion-label >Changer le statut :</ion-label>
+        <ion-select interface="popover" class="custom-options" placeholder="En cours">
+          <ion-select-option value="aFaire">A faire</ion-select-option>
+          <ion-select-option value="terminer">Terminer</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <br>
+      <ion-item>
+        <ion-label position="stacked">Commentaire :</ion-label>
+        <ion-textarea placeholder="Merci de participer a l ammelioration de notre region"></ion-textarea>
+      </ion-item>
+    </div>
+    <br>
+    <ion-button expand="block" [routerLink]="['/admin/encours']">Valider</ion-button>*
+    <br>
+    <ion-button expand="block" fill="outline" [routerLink]="['/admin/encours']">Retour</ion-button>
+  </ion-card>
+
+</ion-content>

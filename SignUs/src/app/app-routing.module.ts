@@ -65,6 +65,30 @@ const routes: Routes = [
   {
     path: 'admin',
     loadChildren: () => import('./admin/admin.module').then( m => m.AdminPageModule)
+  },
+  {
+    path: 'profiladmin',
+    loadChildren: () => import('./profiladmin/profiladmin.module').then( m => m.ProfiladminPageModule)
+  },
+  {
+    path: 'signallementsafaire',
+    loadChildren: () => import('./signallementsafaire/signallementsafaire.module').then( m => m.SignallementsafairePageModule)
+  },
+  {
+    path: 'signallementsencours',
+    loadChildren: () => import('./signallementsencours/signallementsencours.module').then( m => m.SignallementsencoursPageModule)
+  },
+  {
+    path: 'signallementsterminer',
+    loadChildren: () => import('./signallementsterminer/signallementsterminer.module').then( m => m.SignallementsterminerPageModule)
+  },
+  {
+    path: 'signallementsnontraiter',
+    loadChildren: () => import('./signallementsnontraiter/signallementsnontraiter.module').then( m => m.SignallementsnontraiterPageModule)
+  },
+  {
+    path: 'signallementsinterdit',
+    loadChildren: () => import('./signallementsinterdit/signallementsinterdit.module').then( m => m.SignallementsinterditPageModule)
   }
 ];
 @NgModule({

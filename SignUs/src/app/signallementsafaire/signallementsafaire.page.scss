@@ -1,8 +1,12 @@
-ion-title {
+#titre{
     display: block;
     text-align: center;
 }
 
-#couleur {
+#couleur{
     color: rgb(255, 125, 26);
+}
+
+ion-card{
+    padding: 5px;
 }

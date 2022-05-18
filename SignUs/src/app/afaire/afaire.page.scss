@@ -1,14 +1,20 @@
-ion-title{
+#titre{
     display: block;
     text-align: center;
-}
-
-#setting{
-    padding-right: 10px;
-    font-size: 20px;
+    padding-top: auto;
+    padding-bottom: auto;
+    font-size: 205px;
 }
 
 #couleur{
     color: rgb(255, 125, 26);
 }
 
+#italic{
+    font-style: italic;
+}
+
+#centre{
+    display: block;
+    text-align: center;
+}
