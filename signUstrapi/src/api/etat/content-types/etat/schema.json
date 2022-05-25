@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "etats",
+  "info": {
+    "singularName": "etat",
+    "pluralName": "etats",
+    "displayName": "etat"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "etat": {
+      "type": "string"
+    }
+  }
+}

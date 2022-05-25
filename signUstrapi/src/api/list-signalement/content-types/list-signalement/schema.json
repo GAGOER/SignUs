@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "list_signalements",
+  "info": {
+    "singularName": "list-signalement",
+    "pluralName": "list-signalements",
+    "displayName": "listSignalement",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "imgSignal": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "coordonnee": {
+      "type": "json"
+    },
+    "signaler": {
+      "type": "datetime"
+    },
+    "commentaire": {
+      "type": "text"
+    },
+    "statut": {
+      "type": "string"
+    },
+    "users": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "etat": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::etat.etat"
+    }
+  }
+}

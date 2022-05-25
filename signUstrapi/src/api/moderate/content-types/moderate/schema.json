@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "moderates",
+  "info": {
+    "singularName": "moderate",
+    "pluralName": "moderates",
+    "displayName": "moderate"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "role": {
+      "type": "string"
+    }
+  }
+}

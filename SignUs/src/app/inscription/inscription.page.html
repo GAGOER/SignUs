@@ -13,6 +13,7 @@
         <ion-item>
           <ion-label position="floating">NOM :</ion-label>
           <ion-input placeholder="BALDASERONI" type="name"></ion-input>
+          <small id="call"></small>
         </ion-item>
 
         <ion-item>
@@ -74,9 +75,10 @@
         </ion-list>
 
 
-        <ion-button expand="block" color="primary" [routerLink]="['/tabs/tab2']">Valider</ion-button>
+        <ion-button expand="block" type="submit" color="primary" (click)="verification()">Valider</ion-button>
         <br>
-        <ion-button color="primary" fill="outline" expand="block" type="submit" [routerLink]="['/connexion']">Retour</ion-button>
+        <ion-button color="primary" fill="outline" expand="block" type="submit" [routerLink]="['/connexion']">Retour
+        </ion-button>
 
       </ion-card>
 

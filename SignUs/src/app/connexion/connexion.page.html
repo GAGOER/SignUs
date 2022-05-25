@@ -12,33 +12,41 @@
     <div>
 
       <ion-card class="padding">
-        
+
         <ion-item>
           <ion-label position="floating">Email</ion-label>
-          <ion-input  placeholder="truc@gmail.com" type="email" id="E-mail" name="Email"></ion-input>
+          <ion-input placeholder="truc@gmail.com" type="email" id="E-mail" name="Email" [(ngModel)]="email"
+            [ngModelOptions]="{standalone: true}" #firstName="ngModel">
+          </ion-input><span class="help-block" *ngIf="firstName.touched && firstName.invalid">Full Name is
+            requried</span>
+          {{firstName.touched}}
+          {{firstName.invalid}}
         </ion-item>
 
         <ion-item>
           <ion-label position="floating">Mot de passe</ion-label>
-          <ion-input type="password"></ion-input>
+          <ion-input type="password" [(ngModel)]="password" [ngModelOptions]="{standalone: true}" #Pass="ngModel">
+          </ion-input><span class="help-block" *ngIf="Pass.invalid">Full Name is requried</span>
         </ion-item>
 
-    
+
+
         <ion-item lines="none">
-          <ion-button color="tertiary" fill="clear" slot="end" [routerLink]="['/mot-de-passe-oublier']">Mot de passe oublié ?</ion-button>
+          <ion-button color="tertiary" fill="clear" slot="end" [routerLink]="['/mot-de-passe-oublier']">Mot de passe
+            oublié ?</ion-button>
         </ion-item>
 
-        <ion-button color="primary" fill="outline" expand="block" [routerLink]="['/tabs/tab2']">CONNEXION</ion-button>
+        <ion-button color="primary" fill="outline" expand="block" (click)="connexion()">CONNEXION</ion-button>
         <br>
         <ion-item lines="none">
           <ion-label class="ion-text-center">Pas de compte SignUs?</ion-label>
         </ion-item>
-    
+
         <ion-button expand="block" color="primary" [routerLink]="['/inscription']">INSCRIPTION</ion-button>
 
       </ion-card>
 
-      
+
 
     </div>
 

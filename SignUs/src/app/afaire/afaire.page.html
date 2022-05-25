@@ -15,19 +15,19 @@
     </ion-grid>
   </ion-toolbar>
 
-  <ion-card>
+  <ion-card *ngFor="let etat of  etats">
     <ion-item [routerLink]="['/signallementsafaire']">
       <ion-grid>
         <ion-row>
           <ion-col id="italic" size="auto">
-            A faire
+            {{etat.attributes.etat.data?.attributes.etat}}
           </ion-col>
           <ion-col id="centre">
-              Type de signalement
+            {{etat.attributes.statut}}
           </ion-col>
           <ion-col size="auto">
-            date
-        </ion-col>
+            {{etat.attributes.signaler}}
+          </ion-col>
         </ion-row>
       </ion-grid>
     </ion-item>
